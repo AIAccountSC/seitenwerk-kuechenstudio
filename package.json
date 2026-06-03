@@ -1,0 +1,12 @@
+{
+  "name": "seitenwerk-kuechenstudio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Seitenwerk.de — Websites für Küchenstudios mit Anspruch",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "npx --yes serve .",
+    "dev": "npx --yes serve ."
+  },
+  "keywords": ["landing-page", "seitenwerk", "kuechenstudio", "static-site"]
+}

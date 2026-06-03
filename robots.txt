@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aiaccountsc.github.io/seitenwerk-kuechenstudio/sitemap.xml
