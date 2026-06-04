@@ -54,6 +54,16 @@
     @media (max-width: 360px) {
       .header-inner { gap: 8px; padding: 10px 12px; }
     }
+    /* ---- hero device mockup (real screenshots in frames) ---- */
+    .mockup { background: transparent !important; border: 0 !important; padding: 0 !important; box-shadow: none !important; overflow: visible !important; position: relative; }
+    .device-laptop { position: relative; border: 12px solid #1f1813; border-radius: 18px; background: #1f1813; box-shadow: 0 1px 0 rgba(255,255,255,.07) inset, 0 34px 70px -34px rgba(40,24,12,.5); }
+    .device-laptop .screen { display:block; width:100%; height:auto; border-radius:7px; }
+    .device-laptop::after { content:""; position:absolute; left:50%; transform:translateX(-50%); bottom:-15px; width:116%; height:15px; background:linear-gradient(#efe7d9,#b8a890); border-radius:0 0 14px 14px; box-shadow:0 22px 34px -18px rgba(40,24,12,.45); }
+    .device-laptop::before { content:""; position:absolute; z-index:2; left:50%; transform:translateX(-50%); bottom:-15px; width:15%; height:7px; background:#d8cbb6; border-radius:0 0 7px 7px; }
+    .device-phone { position:absolute; left:-8%; bottom:-12%; width:31%; border:7px solid #16110c; border-radius:30px; background:#16110c; box-shadow:0 30px 54px -22px rgba(40,24,12,.5); z-index:3; }
+    .device-phone .screen { display:block; width:100%; height:auto; border-radius:22px; }
+    .device-phone::before { content:""; position:absolute; z-index:4; top:6px; left:50%; transform:translateX(-50%); width:36%; height:9px; background:#16110c; border-radius:0 0 9px 9px; }
+    @media (max-width:560px){ .device-phone{ left:-4%; width:34%; } }
 </style>
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <script type="application/ld+json">
@@ -211,77 +221,9 @@
 
           <div class="hero-right reveal d2">
             <div class="mockup-wrap">
-              <div class="float-chip fc-1">
-                <span class="fc-ic">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                </span>
-                <div class="fc-text">
-                  <b>4,9 / 5</b>
-                  <span>Kundenbewertung</span>
-                </div>
-              </div>
-              <div class="float-chip fc-2">
-                <span class="fc-ic">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                </span>
-                <div class="fc-text">
-                  <b>+58%</b>
-                  <span>passende Anfragen</span>
-                </div>
-              </div>
-              <div class="float-chip fc-3">
-                <span class="fc-ic">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"></path><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.7 0 5.12 1.19 6.77 3.07"></path></svg>
-                </span>
-                <div class="fc-text">
-                  <b>DSGVO</b>
-                  <span>Hosting in DE</span>
-                </div>
-              </div>
-
-              <div class="mockup" aria-hidden="true">
-                <div class="mockup-head">
-                  <div class="mockup-head-l">
-                    <b>Küchenstudio Beispiel</b>
-                    <span>Premium-Küchen · Planung &amp; Beratung</span>
-                  </div>
-                  <span class="mockup-head-r">Termin buchen</span>
-                </div>
-                <div class="mockup-body">
-                  <div class="mockup-feature">
-                    <div class="mockup-feature-ic">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18M9 9v12"></path></svg>
-                    </div>
-                    <h4>Qualität sichtbar machen.</h4>
-                    <p>Marken, Stilwelten und Referenzen, die deinen Anspruch sofort vermitteln.</p>
-                  </div>
-                  <div class="mockup-tile">
-                    <div class="mockup-tile-ic">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v4H3zM5 7v14h14V7M9 12h6"></path></svg>
-                    </div>
-                    <div class="mockup-tile-text">
-                      <b>Marken &amp; Stilwelten</b>
-                      <span>klar präsentiert</span>
-                    </div>
-                  </div>
-                  <div class="mockup-tile slim">
-                    <div class="mockup-tile-ic">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-5-5L5 21"></path></svg>
-                    </div>
-                    <div class="ph"><i></i><i></i></div>
-                  </div>
-                  <div class="mockup-tile slim">
-                    <div class="mockup-tile-ic">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                    </div>
-                    <div class="ph"><i></i><i></i></div>
-                  </div>
-                </div>
-                <div class="mockup-tabs">
-                  <span class="mockup-tab active">Marken</span>
-                  <span class="mockup-tab">Referenzen</span>
-                  <span class="mockup-tab">Anfahrt</span>
-                </div>
+              <div class="mockup" aria-label="Beispiel einer Küchenstudio-Website">
+                <div class="device-laptop"><img class="screen" src="assets/shot-laptop.png" alt="Beispiel Küchenstudio-Website auf dem Laptop" width="1600" height="1000" loading="lazy" decoding="async" /></div>
+                <div class="device-phone"><img class="screen" src="assets/shot-phone.png" alt="Beispiel Küchenstudio-Website auf dem Smartphone" width="430" height="932" loading="lazy" decoding="async" /></div>
               </div>
             </div>
           </div>
