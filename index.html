@@ -124,6 +124,12 @@
     .case-benefit div h4{font-size:15px;font-weight:700;color:var(--ink);margin:0 0 4px;}
     .case-benefit div p{font-size:13px;color:var(--muted);margin:0;line-height:1.5;}
     .case-note{text-align:center;font-size:13px;color:var(--muted);margin-top:24px;font-style:italic;}
+    /* ---- mobile: allow large CTA buttons to wrap so long labels don't overflow ---- */
+    @media (max-width: 600px) {
+      .btn-lg { white-space: normal; max-width: 100%; text-align: center; }
+      .btn-lg .btn-label { white-space: normal; }
+      .final { padding-left: clamp(24px, 7vw, 88px); padding-right: clamp(24px, 7vw, 88px); }
+    }
 </style>
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <script type="application/ld+json">
